@@ -1,12 +1,14 @@
 import './App.css';
 import AppHeader from './components/AppHeader';
+import Netzwerk from './components/Netzwerk';
 
 function App() {
   return (
 
     <div className="App">
       <header className="App-header">
-      <AppHeader />
+      <Netzwerk />
+
        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
