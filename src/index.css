@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.netzwerk {
+  background-color: #fff;
+  width: 640px;
+  height: 500px;
+}
+
+.buttons {
+    text-align: center;
+}
