@@ -1,48 +1,40 @@
-import {ButtonToolbar, Button} from 'react-bootstrap'
+import { ButtonToolbar, Button } from 'react-bootstrap'
 import { Component } from 'react';
-
+import FragenUndAntworten from './FragenUndAntworten';
 export default class Netzwerk extends Component {
 
-    constructor(props){
-             super(props);
-             this.state = {
-                 fragen: [
-                 {
-                        frage0: {
-                            ersteller: "Justin",
-                            frage: "oki-doki",
-                        },
-                  },
-                  {
-                    frage0: {
-                             ersteller: "Justin",
-                             frage: "oki-doki",
-                        },
-                  }
-                 ],
-             }
-        }
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: "terer"
+        };
+    }
 
 
-    getErnaehrungFragen(){
-        console.log(this.state.fragen);
-        //console.log(this.state.fragen[1].frage0);
-      }
+    getFragenUndAntworten(param) {
+        console.log(param);
+        this.setState({
+            text: <FragenUndAntworten cat={param}/>
+        });
+    }
 
     render() {
         return (
-        <div class="container h-100">
-            <div class="row align-items-center h-100">
-                <div class="col-6 mx-auto themen">
-                    <ButtonToolbar>
-                        <Button variant="success" onClick={this.getErnaehrungFragen.bind(this)}>Ernährung</Button>
-                        <Button variant="success">Gesundheit</Button>
-                        <Button variant="success">Spielpartner</Button>
-                        <Button variant="success">Betreuung</Button>
-                    </ButtonToolbar>
-               </div>
+            <div>
+                <div>
+                    <div>
+                        <ButtonToolbar>
+                            <Button variant="success" onClick={this.getFragenUndAntworten.bind(this, "Ernährung")}>Ernährung</Button>
+                            <Button variant="success" onClick={this.getFragenUndAntworten.bind(this, "Gesundheit")}>Gesundheit</Button>
+                            <Button variant="success" onClick={this.getFragenUndAntworten.bind(this, "Spielpartner")}>Spielpartner</Button>
+                            <Button variant="success" onClick={this.getFragenUndAntworten.bind(this, "Betreuung")}>Betreuung</Button>
+                        </ButtonToolbar>
+                        <div >
+                            {this.state.text}
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
         )
     }
 }
