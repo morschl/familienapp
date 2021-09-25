@@ -6,6 +6,7 @@ import Netzwerk from "./Netzwerk";
 import Veranstaltungen from "./Veranstaltungen";
 import Leihboerse from "./Leihboerse";
 import Dashboard from "./Dashboard";
+import SpielplatzTalk from "./SpielplatzTalk";
 
 export default class AppHeader extends Component {
 
@@ -29,6 +30,10 @@ export default class AppHeader extends Component {
         } else if (param === "Leihbörse") {
             this.setState({
                 text: <Leihboerse/>
+            })
+        } else if (param === "Spielplatz-Talk") {
+            this.setState({
+                text: <SpielplatzTalk/>
             })
         } else if (param === "Dashboard") {
             this.setState({
@@ -55,6 +60,8 @@ export default class AppHeader extends Component {
                                     Veranstaltungen</Nav.Link>
                                 <Nav.Link href="#shares"
                                           onClick={this.getThemen.bind(this, "Leihbörse")}>Leihbörse</Nav.Link>
+                                <Nav.Link href="#shares"
+                                          onClick={this.getThemen.bind(this, "Spielplatz-Talk")}>Spielplatz-Talk</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
