@@ -1,5 +1,5 @@
 import { ButtonToolbar, Button } from 'react-bootstrap'
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 import './Netzwerks.css'
 
@@ -15,11 +15,11 @@ export default class Netzwerk extends Component {
 
 
     getFragenUndAntworten(param) {
-        console.log(param);
-        this.setState({
+         this.setState({
             text: <FragenUndAntworten cat={param}/>
-        });
+         });
     }
+
 
     render() {
         return (
