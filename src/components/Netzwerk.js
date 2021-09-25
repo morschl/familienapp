@@ -4,6 +4,7 @@ import {Component} from 'react';
 import './Netzwerks.css'
 
 import FragenUndAntworten from './FragenUndAntworten';
+import Gruppen from './Gruppen';
 
 export default class Netzwerk extends Component {
 
@@ -11,7 +12,8 @@ export default class Netzwerk extends Component {
         super(props);
         this.state = {
             oldState: "alle",
-            text: <FragenUndAntworten cat={null}/>
+            text: <FragenUndAntworten cat={null}/>,
+            gruppenText:<Gruppen cat={null}/>
         };
     }
 
@@ -29,6 +31,12 @@ export default class Netzwerk extends Component {
             });
         }
 
+    }
+
+    getGruppenFragen(param) {
+        this.setState({
+            gruppenText:<Gruppen cat={param}/>
+        });
     }
 
     render() {
@@ -58,7 +66,23 @@ export default class Netzwerk extends Component {
                     </div>
                 </Tab>
                 <Tab eventKey="groups" title="Gruppen">
-                    Gruppen
+                    <div className="container-fluid">
+                        <div>
+                            <div>
+                                <ButtonToolbar>
+                                    <Button variant="success"
+                                            onClick={this.getGruppenFragen.bind(this, "Geistviertel")}>Geistviertel</Button>
+                                    <Button variant="success"
+                                            onClick={this.getGruppenFragen.bind(this, "Kreuzviertel")}>Kreuzviertel</Button>
+                                    <Button variant="success"
+                                            onClick={this.getGruppenFragen.bind(this, "Martiniviertel")}>Martiniviertel</Button>
+                                </ButtonToolbar>
+                                <div>
+                                    {this.state.gruppenText}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Tab>
                 <Tab eventKey="chat" title="Chat">
                     Chat
