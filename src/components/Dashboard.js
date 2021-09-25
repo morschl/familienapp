@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card} from 'react-bootstrap'
 import React, { Component } from 'react';
 
 import './Dashboard.css'
@@ -20,8 +20,6 @@ export default class Dashboard extends Component {
             text: param
         });
     }
-
-
 
     render() {
         if (this.state.text === "nestwerken") {
