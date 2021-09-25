@@ -9,16 +9,25 @@ export default class Netzwerk extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            oldState: "alle",
             text: <FragenUndAntworten cat={null}/>
         };
     }
 
 
     getFragenUndAntworten(param) {
-        console.log(param);
-        this.setState({
-            text: <FragenUndAntworten cat={param}/>
-        });
+        if (param != this.state.oldState) {
+            this.setState({
+                oldState: param,
+                text: <FragenUndAntworten cat={param}/>
+            });
+        } else {
+            this.setState({
+                oldState: "alle",
+                text: <FragenUndAntworten cat={null}/>
+            });
+        }
+
     }
 
     render() {

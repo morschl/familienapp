@@ -169,7 +169,7 @@ export default class FragenUndAntworten extends Component {
                    </Accordion.Item>
                 </Accordion>
             )
-        } else if (cats[0] === ("Ernährung")) {
+        } else if (cats[0] === "Ernährung") {
             return (
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
