@@ -27,13 +27,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0315435"
-     inkscape:cx="220.5433"
+     inkscape:cx="220.54329"
      inkscape:cy="298.09698"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
-     inkscape:window-width="1296"
-     inkscape:window-height="847"
+     inkscape:window-width="1510"
+     inkscape:window-height="943"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
@@ -1101,7 +1101,7 @@
        ry="99.0625" />
   </g>
   <path
-     style="fill:#87cdde;stroke:none"
+     style="fill:#7f99de;stroke:none;fill-opacity:1"
      d="M 118.34375,20 C 63.867087,20 20,63.867084 20,118.34375 l 0,23.0625 0,252.25 C 20,448.13291 63.867087,492 118.34375,492 l 275.3125,0 C 448.13292,492 492,448.13291 492,393.65625 l 0,-252.25 0,-23.0625 C 492,63.867084 448.13292,20 393.65625,20 l -275.3125,0 z"
      id="rect5505"
      inkscape:connector-curvature="0" />
