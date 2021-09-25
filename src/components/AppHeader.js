@@ -60,7 +60,7 @@ export default class AppHeader extends Component {
                                     Veranstaltungen</Nav.Link>
                                 <Nav.Link href="#shares"
                                           onClick={this.getThemen.bind(this, "Leihbörse")}>Leihbörse</Nav.Link>
-                                <Nav.Link href="#shares"
+                                <Nav.Link href="#talk"
                                           onClick={this.getThemen.bind(this, "Spielplatz-Talk")}>Spielplatz-Talk</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>

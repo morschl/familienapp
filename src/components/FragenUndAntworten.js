@@ -198,18 +198,18 @@ export default class FragenUndAntworten extends Component {
         if (cats[0] === null) {
             return (
                 <Accordion>
-                    <Accordion.Item eventKey="0">
+                    <Accordion.Item eventKey="1">
                         <Accordion.Header>Ich habe eine sechsmonatealte Tochter. Welche Teesorte koennt Ihr bei
                             Blaehungen empfehlen?</Accordion.Header>
                         <Accordion.Body>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="1">
+                    <Accordion.Item eventKey="2">
                         <Accordion.Header>Mein Sohn schlaeft einfach nicht. Was hat euch geholfen?</Accordion.Header>
                         <Accordion.Body>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="1">
+                    <Accordion.Item eventKey="3">
                         <Accordion.Header>Jemand Lust auf Suedviertelspielplatz heut Nachmittag?</Accordion.Header>
                         <Accordion.Body>
                             <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="48px"
@@ -254,17 +254,17 @@ export default class FragenUndAntworten extends Component {
                             <hr/>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="1">
+                    <Accordion.Item eventKey="4">
                         <Accordion.Header>Alleinerziehender Vater hier. Suche Gleichgesinnte.</Accordion.Header>
                         <Accordion.Body>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="1">
+                    <Accordion.Item eventKey="5">
                         <Accordion.Header>Hat jemand Erfahrungen mit der Kita Spatzenhaus?</Accordion.Header>
                         <Accordion.Body>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="1">
+                    <Accordion.Item eventKey="6">
                         <Accordion.Header>Welches Schwimmbad koennt ihr fuer Kleinkinder empfehlen?</Accordion.Header>
                         <Accordion.Body>
                         </Accordion.Body>
