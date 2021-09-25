@@ -23,7 +23,7 @@ export default class Netzwerk extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container-fluid">
                 <div>
                     <div>
                         <ButtonToolbar>
