@@ -9,9 +9,10 @@ export default class Netzwerk extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            text: ""
+            text: <FragenUndAntworten cat={null}/>
         };
     }
+
 
     getFragenUndAntworten(param) {
         console.log(param);
