@@ -22,7 +22,6 @@ export default class Veranstaltungen extends Component {
                                 <Button variant="success" onClick={this.getEvents.bind(this, "Veranstaltungen")}>Veranstaltungen</Button>
                             </ButtonToolbar>
                             <div >
-                                <h1>Veranstaltungen & Kurse</h1>
                                 {this.state.text}
                             </div>
                         </div>
