@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card} from 'react-bootstrap'
+import { Container, Row, Col, Card, Image } from 'react-bootstrap'
 import React, { Component } from 'react';
 
 import './Dashboard.css'
@@ -27,42 +27,40 @@ export default class Dashboard extends Component {
         } else if (this.state.text === "veranstaltungen") {
             return (<Veranstaltungen />)
         } else if (this.state.text === "leihboerse") {
-            return (<Leihboerse/>)
+            return (<Leihboerse />)
         } else if (this.state.text === "spielplatztalk") {
-            return (<SpielplatzTalk/>)
+            return (<SpielplatzTalk />)
         } else {
             return (
                 <Container className='container-fluid'>
                     <Row className="justify-content-md-center">
-                        <Col xs={2}>
+                        <Col>
                             <Card style={{ border: 'none' }}>
-                                <Card.Img variant="top" src="./logo.svg" onClick={this.getThemen.bind(this, "nestwerken")} />
+                                <Card.Img style={{ minWidth: "10rem" }} variant="top" src="./logo.svg" onClick={this.getThemen.bind(this, "nestwerken")} />
                                 <Card.Body>
                                     <Card.Title style={{ textAlign: 'center' }}>Nestwerken</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={2}>
+                        <Col>
                             <Card style={{ border: 'none' }}>
-                                <Card.Img variant="top" src="./kalender.svg" onClick={this.getThemen.bind(this, "veranstaltungen")} />
+                                <Card.Img style={{ minWidth: "10rem" }} variant="top" src="./kalender.svg" onClick={this.getThemen.bind(this, "veranstaltungen")} />
                                 <Card.Body>
                                     <Card.Title style={{ textAlign: 'center' }}>Kurse & Veranstaltungen</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Col xs={2}>
+                        <Col>
                             <Card style={{ border: 'none' }}>
-                                <Card.Img variant="top" src="./tauschboerse.svg" onClick={this.getThemen.bind(this, "leihboerse")} />
+                                <Card.Img style={{ minWidth: "10rem" }} variant="top" src="./tauschboerse.svg" onClick={this.getThemen.bind(this, "leihboerse")} />
                                 <Card.Body>
                                     <Card.Title style={{ textAlign: 'center' }}>Tauschen & Leihen</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={2}>
+                        <Col>
                             <Card style={{ border: 'none' }}>
-                                <Card.Img variant="top" src="./spielplatz.svg" onClick={this.getThemen.bind(this, "spielplatztalk")} />
+                                <Card.Img style={{ minWidth: "10rem" }} variant="top" src="./spielplatz.svg" onClick={this.getThemen.bind(this, "spielplatztalk")} />
                                 <Card.Body>
                                     <Card.Title style={{ textAlign: 'center' }}>Spielplatz-Talk</Card.Title>
                                 </Card.Body>
