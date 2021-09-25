@@ -13,7 +13,7 @@ export default class Leihboerse extends Component {
 
     render() {
         return (
-            <div>Leihbörse</div>
+            <div>Radar</div>
         )
     }
 }

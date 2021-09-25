@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import {Navbar, Container, Nav} from 'react-bootstrap'
+import {Navbar, Nav} from 'react-bootstrap'
 
 import './AppHeader.css'
 import Netzwerk from "./Netzwerk";
-import FragenUndAntworten from "./FragenUndAntworten";
 import Veranstaltungen from "./Veranstaltungen";
 import Leihboerse from "./Leihboerse";
+import Dashboard from "./Dashboard";
 
 export default class AppHeader extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            text: ""
+            text: <Dashboard/>
         };
     }
 
@@ -22,15 +22,17 @@ export default class AppHeader extends Component {
             this.setState({
                 text: <Netzwerk/>
             });
-        }
-        if (param === "Veranstaltungen") {
+        } else if (param === "Veranstaltungen") {
             this.setState({
                 text: <Veranstaltungen/>
             })
-        }
-        if (param === "Leihbörse") {
+        } else if (param === "Leihbörse") {
             this.setState({
                 text: <Leihboerse/>
+            })
+        } else if (param === "Dashboard") {
+            this.setState({
+                text: <Dashboard/>
             })
         }
     }
@@ -40,7 +42,7 @@ export default class AppHeader extends Component {
             <div>
                 <div>
                     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                        <Navbar.Brand href="#home">
+                        <Navbar.Brand href="#dashboard" onClick={this.getThemen.bind(this, "Dashboard")}>
                             <img className='logo' src="../logo.svg" alt=''/>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

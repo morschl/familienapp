@@ -1,7 +1,7 @@
 import './App.css';
 import AppHeader from './components/AppHeader';
-import Netzwerk from './components/Netzwerk';
 import React from "react";
+import Dashboard from "./components/Dashboard";
 
 function App() {
     return (

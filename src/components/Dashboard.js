@@ -1,15 +1,37 @@
-import {Button} from 'react-bootstrap'
-import { Component } from 'react';
+import {Container, Row, Col, Card} from 'react-bootstrap'
+import React, {Component} from 'react';
+
+import './Dashboard.css'
 
 export default class Dashboard extends Component {
     render() {
         return (
-           <>
-             <Button variant="primary">Ernährung</Button>{' '}
-             <Button variant="secondary">Gesundheit</Button>{' '}
-             <Button variant="success">Spielpartner</Button>{' '}
-             <Button variant="warning">Betreuung</Button>{' '}
-           </>
+            <Container className='container-fluid'>
+                <Row>
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src="./logo.svg"/>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src="./logo.svg"/>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className='col-sm'>
+                        <Card>
+                            <Card.Img variant="top" src="./logo.svg"/>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src="./logo.svg"/>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
         )
     }
 }
