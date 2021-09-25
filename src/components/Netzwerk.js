@@ -1,15 +1,17 @@
 import { ButtonToolbar, Button } from 'react-bootstrap'
 import { Component } from 'react';
+
+import './Netzwerks.css'
+
 import FragenUndAntworten from './FragenUndAntworten';
 export default class Netzwerk extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            text: "terer"
+            text: ""
         };
     }
-
 
     getFragenUndAntworten(param) {
         console.log(param);
